@@ -1,0 +1,80 @@
+/*************
+General Elements
+**************/
+
+/*************
+Images
+**************/
+
+.logo {
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  top: -36px;
+  transform: translateX(-50%);
+}
+
+/*************
+Buttons / Links
+**************/
+
+/*************
+Typography
+**************/
+
+.header-heading {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 1.5rem;
+  color: var(--b);
+  padding-left: 0.75rem;
+}
+
+/*************
+Layout
+**************/
+
+.header {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  padding-top: 1.75rem;
+}
+
+.circle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 20px;
+  width: 40px;
+  border-radius: 0 0 150px 150px;
+  background-color: red;
+}
+
+/*************
+Media Queries
+**************/
+
+@media (min-width: 640px) {
+  .logo {
+    width: 240px;
+    top: -42px;
+  }
+
+  .header-container {
+    padding-top: 2rem;
+  }
+
+  .header-heading {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 2rem;
+    color: var(--b);
+    padding-left: 1rem;
+  }
+}

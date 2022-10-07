@@ -1,0 +1,89 @@
+/*************
+General Elements
+**************/
+
+/*************
+Images
+**************/
+
+/*************
+Buttons / Links / inputs
+**************/
+
+.search-input {
+  width: 40vw;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 2px;
+  margin-right: 0.25rem;
+}
+
+.explore-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2px;
+  background-color: var(--b);
+  color: var(--wht);
+  cursor: pointer;
+}
+
+/*************
+Typography
+**************/
+
+.main-heading {
+  font-weight: 700;
+  font-size: 1.25rem;
+  /* color: #778899; */
+  color: var(--blk);
+}
+
+.main-content {
+  text-align: center;
+  color: var(--b);
+  margin-bottom: 1rem;
+}
+
+.pokemon-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--blk);
+}
+
+/*************
+Layout
+**************/
+
+.main {
+  width: 100%;
+}
+
+.main-container {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon {
+  margin: 1rem 0;
+}
+
+.pokemon-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pokemon-abilities {
+  width: 48%;
+}
+
+.pokemon-stats {
+  width: 48%;
+}
+
+/*************
+Media Queries
+**************/

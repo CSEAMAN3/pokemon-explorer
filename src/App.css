@@ -1,38 +1,118 @@
+html {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Luckiest Guy", cursive; */
+}
+
+:root {
+  --b: #277bc0;
+  --lb: #a2d2ff;
+  --y: #ffcb42;
+  --o: #ffb200;
+  --r: #ff4840;
+  --ly: #fff4cf;
+  --wht: #f8f8f8;
+  --blk: #28282b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::before {
+  box-sizing: border-box;
+}
+
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  background-color: var(--b);
+  padding-top: 5rem;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  min-height: 400px;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  background-color: var(--y);
+  width: 70%;
+  min-height: 80vh;
+  box-shadow: 20px 20px 60px #2169a3, -20px -20px 60px #2d8ddd;
+  border-radius: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .top-verticle-line {
+  height: 240px;
+  border-left: 3px solid var(--wht);
+  position: fixed;
+  top: 0;
+  left: 8vw;
 }
+
+.bottom-verticle-line {
+  height: 240px;
+  border-left: 3px solid var(--wht);
+  position: fixed;
+  bottom: -20px;
+  left: 92vw;
+} */
+
+/*************
+General Elements
+**************/
+
+/*************
+Images
+**************/
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* .pokeball {
+  width: 60px;
+} */
+
+/*************
+Buttons / Links
+**************/
+
+/*************
+Typography
+**************/
+
+/*************
+Layout
+**************/
+
+.top-img-container {
+  position: relative;
+  left: -32px;
+  top: 140px;
+}
+
+.bottom-img-container {
+  position: relative;
+  right: 32px;
+  top: 16px;
+}
+
+/*************
+Media Queries
+**************/

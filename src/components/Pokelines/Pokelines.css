@@ -1,0 +1,43 @@
+/*************
+General Elements
+**************/
+
+/*************
+Images
+**************/
+
+.pokeball {
+  width: 60px;
+}
+
+/*************
+Buttons / Links
+**************/
+
+/*************
+Typography
+**************/
+
+/*************
+Layout
+**************/
+
+.top-verticle-line {
+  height: 240px;
+  border-left: 3px solid var(--wht);
+  position: fixed;
+  top: 0;
+  left: 8vw;
+}
+
+.bottom-verticle-line {
+  height: 240px;
+  border-left: 3px solid var(--wht);
+  position: fixed;
+  bottom: -20px;
+  left: 92vw;
+}
+
+/*************
+Media Queries
+**************/

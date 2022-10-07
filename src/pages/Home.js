@@ -9,7 +9,7 @@ export default function Home({ handleChange, getPokemon, pokemon }) {
       <div className="main-container">
         <h2 className="main-heading">Explore the world of pokemon!</h2>
         <p className="main-content">Search a pokemon, learn all about it.</p>
-        <form onSubmit={getPokemon}>
+        <form className="pokemon-form" onSubmit={getPokemon}>
           <input onChange={handleChange} className="search-input" name="name" placeholder="search pokemon" type="text" />
           <button className="explore-btn" type="submit">
             Explore
@@ -18,19 +18,27 @@ export default function Home({ handleChange, getPokemon, pokemon }) {
         <div className="pokemon-container">
           <div className="pokemon">
             <h2 className="pokemon-name">{pokemon.name}</h2>
-            <img src={pokemon.sprites?.front_default} alt={pokemon.name} />
+            <img
+              className="pokemon-img"
+              src={pokemon.sprites?.versions?.["generation-v"]["black-white"].animated.front_default}
+              alt={pokemon.name}
+            />
             <div className="pokemon-info">
               <div className="pokemon-abilities">
                 <h3 className="abilities-heading">Abilites</h3>
                 {pokemon.abilities?.map((ability, index) => {
-                  return <p key={index}>{ability.ability.name}</p>;
+                  return (
+                    <p className="abilities-info" key={index}>
+                      {ability.ability.name}
+                    </p>
+                  );
                 })}
               </div>
               <div className="pokemon-stats">
                 <h3 className="stats-heading">Stats</h3>
                 {pokemon.stats?.map((stat, index) => {
                   return (
-                    <p key={index}>
+                    <p className="stat-info" key={index}>
                       {stat.stat.name} : {stat.base_stat}
                     </p>
                   );

@@ -6,6 +6,12 @@ General Elements
 Images
 **************/
 
+.pokemon-img {
+  width: 160px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
 /*************
 Buttons / Links / inputs
 **************/
@@ -16,13 +22,14 @@ Buttons / Links / inputs
   border: none;
   border-radius: 2px;
   margin-right: 0.25rem;
+  margin-bottom: 1rem;
 }
 
 .explore-btn {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 2px;
-  background-color: var(--b);
+  background-color: var(--r);
   color: var(--wht);
   cursor: pointer;
 }
@@ -36,6 +43,7 @@ Typography
   font-size: 1.25rem;
   /* color: #778899; */
   color: var(--blk);
+  text-align: center;
 }
 
 .main-content {
@@ -45,9 +53,30 @@ Typography
 }
 
 .pokemon-name {
+  font-family: "Luckiest Guy", cursive;
   font-size: 2rem;
   font-weight: 700;
-  color: var(--blk);
+  color: var(--b);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.abilities-heading,
+.stats-heading {
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 700;
+  color: var(--b);
+}
+
+.stats-heading {
+  /* style added as cant add margin-bottom to .abilities-info */
+  margin-top: 1rem;
+}
+
+.abilities-info,
+.stat-info {
+  text-align: center;
 }
 
 /*************
@@ -67,23 +96,16 @@ Layout
   align-items: center;
 }
 
+.pokemon-form {
+  text-align: center;
+}
+
+.pokmon-container {
+  width: 100%;
+}
+
 .pokemon {
   margin: 1rem 0;
-}
-
-.pokemon-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.pokemon-abilities {
-  width: 48%;
-  margin-bottom: 2rem;
-}
-
-.pokemon-stats {
-  width: 48%;
 }
 
 /*************

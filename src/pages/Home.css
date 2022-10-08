@@ -2,6 +2,10 @@
 General Elements
 **************/
 
+.hide {
+  display: none;
+}
+
 /*************
 Images
 **************/
@@ -10,6 +14,10 @@ Images
   width: 160px;
   margin: 0 auto;
   margin-bottom: 2rem;
+}
+
+.energy-balls {
+  width: 60px;
 }
 
 /*************
@@ -62,7 +70,8 @@ Typography
 }
 
 .abilities-heading,
-.stats-heading {
+.stats-heading,
+.type-heading {
   text-align: center;
   font-family: "Luckiest Guy", cursive;
   font-weight: 700;
@@ -106,6 +115,16 @@ Layout
 
 .pokemon {
   margin: 1rem 0;
+}
+
+.pokemon-type {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.type-icon-container {
+  display: inline-block;
+  margin: 0 1rem;
 }
 
 /*************

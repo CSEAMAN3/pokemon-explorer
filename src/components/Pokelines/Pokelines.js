@@ -1,7 +1,7 @@
 import React from "react";
 import "./Pokelines.css";
 
-import pokeball from "../images/pokball.svg";
+import pokeball from "../../images/pokball.svg";
 
 export default function Pokelines() {
   return (

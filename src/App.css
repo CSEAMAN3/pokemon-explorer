@@ -35,6 +35,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 1.6;
+  color: var(--blk);
   background-color: var(--b);
   padding-top: 5rem;
 }

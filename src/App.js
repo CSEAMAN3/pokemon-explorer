@@ -40,8 +40,8 @@ function App() {
             <Route path="/battle-arena" element={<BattleArena />} />
             <Route path="/about" element={<About />} />
           </Routes>
-          <Footer />
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );

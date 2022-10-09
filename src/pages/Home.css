@@ -3,7 +3,7 @@ General Elements
 **************/
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 /*************
@@ -14,6 +14,11 @@ Images
   width: 160px;
   margin: 0 auto;
   margin-bottom: 2rem;
+  transform: scaleX(-1);
+}
+
+.battle-logo {
+  width: 200px;
 }
 
 .energy-balls {
@@ -88,6 +93,21 @@ Typography
   text-align: center;
 }
 
+.battle-play-heading {
+  color: var(--r);
+  text-align: center;
+  font-size: 1.25rem;
+  font-family: "Luckiest Guy", cursive;
+}
+
+.battle-arena-logo-heading {
+  font-size: 1.25rem;
+  font-family: "Luckiest Guy", cursive;
+  color: var(--r);
+  padding-left: 8px;
+  margin-top: -4px;
+}
+
 /*************
 Layout
 **************/
@@ -98,11 +118,7 @@ Layout
 
 .main-container {
   width: 90%;
-  max-width: 1024px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .pokemon-form {
@@ -127,6 +143,91 @@ Layout
   margin: 0 1rem;
 }
 
+.battle-arena-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+}
+
 /*************
 Media Queries
 **************/
+
+/* ------------------------------------------------------------------------- */
+
+@media (min-width: 740px) {
+  /*************
+General Elements @740px
+**************/
+
+  /*************
+Images @740px
+**************/
+
+  /*************
+Buttons / Links @740px
+**************/
+
+  /*************
+Typography @740px
+**************/
+
+  .stats-heading {
+    /* style removed from 1rem global style as couldn't add margin-bottom to .abilities-info */
+    margin-top: 0;
+  }
+
+  /*************
+Layout @740px
+**************/
+
+  .pokemon-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .pokemon-type {
+    width: 100%;
+  }
+
+  .pokemon-abilities,
+  .pokemon-stats {
+    width: 48%;
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+
+@media (min-width: 900px) {
+  /*************
+General Elements
+**************/
+
+  /*************
+Images
+**************/
+
+  /*************
+Buttons / Links
+**************/
+
+  /*************
+Typography
+**************/
+
+  /*************
+Layout
+**************/
+
+  .pokemon-type,
+  .pokemon-abilities,
+  .pokemon-stats {
+    width: 30%;
+  }
+
+  /*************
+Media Queries
+**************/
+}

@@ -20,6 +20,7 @@ import dragonEnergy from "../images/dragon.svg";
 import darkEnergy from "../images/dark.svg";
 import steelEnergy from "../images/steel.svg";
 import fairyEnergy from "../images/fairy.svg";
+import pokemonRed from "../images/pokemon-red-logo.svg";
 
 import { Link } from "react-router-dom";
 
@@ -56,59 +57,63 @@ export default function Home({ handleChange, getPokemon, pokemon }) {
             Explore
           </button>
         </form>
-        <div className="pokemon-container">
-          <div className="pokemon">
-            <h2 className="pokemon-name">{pokemon.name}</h2>
-            <img
-              className="pokemon-img"
-              src={pokemon.sprites?.versions?.["generation-v"]["black-white"].animated.front_default}
-              alt={pokemon.name}
-            />
-            <div className={`pokemon-info ${pokemon.abilities ? "" : "hide"}`}>
-              <div className="pokemon-type">
-                <h3 className="type-heading">Type</h3>
-                {pokemon.types?.map((type, index) => {
-                  return (
-                    <div className="type-icon-container" key="index">
-                      {/* <p className="pokemon-type"> */}
-                      {/* {type.type.name} */}
-                      {/* {allTypes.type.name} */}
-                      {/* </p> */}
-                      <img className="energy-balls" src={allTypes[type.type.name]} alt="pokemon energy" />
-                    </div>
-                  );
-                })}
-              </div>
-              <div className="pokemon-abilities">
-                <h3 className="abilities-heading">Abilites</h3>
-                {pokemon.abilities?.map((ability, index) => {
-                  return (
-                    <p className="abilities-info" key={index}>
-                      {ability.ability.name}
-                    </p>
-                  );
-                })}
-              </div>
-              <div className="pokemon-stats">
-                <h3 className="stats-heading">Stats</h3>
-                {pokemon.stats?.map((stat, index) => {
-                  return (
-                    <p className="stat-info" key={index}>
-                      {stat.stat.name} : {stat.base_stat}
-                    </p>
-                  );
-                })}
-              </div>
+        {/* <div className="pokemon-container"> */}
+        <div className="pokemon">
+          <h2 className="pokemon-name">{pokemon.name}</h2>
+          <img
+            className="pokemon-img"
+            src={pokemon.sprites?.versions?.["generation-v"]["black-white"].animated.front_default}
+            alt={pokemon.name}
+          />
+          <div className={`pokemon-info ${pokemon.abilities ? "" : "hide"}`}>
+            <div className="pokemon-type">
+              <h3 className="type-heading">Type</h3>
+              {pokemon.types?.map((type, index) => {
+                return (
+                  <div className="type-icon-container" key="index">
+                    {/* <p className="pokemon-type"> */}
+                    {/* {type.type.name} */}
+                    {/* {allTypes.type.name} */}
+                    {/* </p> */}
+                    <img className="energy-balls" src={allTypes[type.type.name]} alt="pokemon energy" />
+                  </div>
+                );
+              })}
+            </div>
+            <div className="pokemon-abilities">
+              <h3 className="abilities-heading">Abilites</h3>
+              {pokemon.abilities?.map((ability, index) => {
+                return (
+                  <p className="abilities-info" key={index}>
+                    {ability.ability.name}
+                  </p>
+                );
+              })}
+            </div>
+            <div className="pokemon-stats">
+              <h3 className="stats-heading">Stats</h3>
+              {pokemon.stats?.map((stat, index) => {
+                return (
+                  <p className="stat-info" key={index}>
+                    {stat.stat.name} : {stat.base_stat}
+                  </p>
+                );
+              })}
             </div>
           </div>
-          <Link to="/battle-arena">
-            <button className="battle-btn">Battle Arena</button>
-          </Link>
-          <Link to="/about">
-            <button className="about-btn">About</button>
-          </Link>
         </div>
+        <div className="battle-arena-container">
+          <Link to="/battle-arena">
+            <p className="battle-play-heading">Play Now</p>
+            <img className="battle-logo" src={pokemonRed} alt="pokemon logo red" />
+          </Link>
+          <h4 className="battle-arena-logo-heading">Battle Arena</h4>
+        </div>
+        <Link to="/about">
+          <button className="about-btn">About</button>
+        </Link>
       </div>
+      {/* </div> */}
     </main>
   );
 }

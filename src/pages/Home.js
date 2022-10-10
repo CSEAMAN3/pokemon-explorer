@@ -62,7 +62,8 @@ export default function Home({ handleChange, getPokemon, pokemon }) {
           <h2 className="pokemon-name">{pokemon.name}</h2>
           <img
             className="pokemon-img"
-            src={pokemon.sprites?.versions?.["generation-v"]["black-white"].animated.front_default}
+            // src={pokemon.sprites?.versions?.["generation-v"]["black-white"].animated.front_default}
+            src={pokemon.sprites?.other?.dream_world?.front_default}
             alt={pokemon.name}
           />
           <div className={`pokemon-info ${pokemon.abilities ? "" : "hide"}`}>
@@ -109,9 +110,11 @@ export default function Home({ handleChange, getPokemon, pokemon }) {
           </Link>
           <h4 className="battle-arena-logo-heading">Battle Arena</h4>
         </div>
-        <Link to="/about">
-          <button className="about-btn">About</button>
-        </Link>
+        <div className="about-container">
+          <Link to="/about">
+            <button className="about-btn">About</button>
+          </Link>
+        </div>
       </div>
       {/* </div> */}
     </main>

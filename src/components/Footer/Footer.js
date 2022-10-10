@@ -8,7 +8,9 @@ export default function Footer() {
       <div className="footer-container">
         <h1 className="footer-heading">&#169; Christopher Seaman Pokemon Explorer</h1>
         <div className="triangle"></div>
-        <img className="github-icon" src={githubLogo} alt="github logo link to github profile" />
+        <a href="https://github.com/CSEAMAN3" target="_blank" rel="noreferrer">
+          <img className="github-icon" src={githubLogo} alt="github logo link to github profile" />
+        </a>
       </div>
     </footer>
   );

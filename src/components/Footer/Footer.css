@@ -23,6 +23,10 @@ Buttons / Links
 Typography
 **************/
 
+.footer-heading {
+  max-width: 21ch;
+}
+
 /*************
 Layout
 **************/

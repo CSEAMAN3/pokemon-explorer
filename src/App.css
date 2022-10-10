@@ -55,6 +55,7 @@ body {
   min-height: 70vh;
   box-shadow: 20px 20px 60px #2169a3, -20px -20px 60px #2d8ddd;
   border-radius: 16px;
+  margin-bottom: 1rem;
 }
 
 /* .top-verticle-line {

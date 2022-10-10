@@ -112,7 +112,7 @@ export default function Home({ handleChange, getPokemon, pokemon }) {
         </div>
         <div className="about-container">
           <Link to="/about">
-            <button className="about-btn">About</button>
+            <button className="about-btn">About Pokemon Explorer</button>
           </Link>
         </div>
       </div>

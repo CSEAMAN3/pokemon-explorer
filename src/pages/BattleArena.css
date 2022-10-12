@@ -1,0 +1,110 @@
+/*************
+General Elements
+**************/
+
+/*************
+Images
+**************/
+
+.player1-img {
+  transform: scaleX(-1);
+}
+
+.player1-img,
+.player2-img {
+  height: 200px;
+  width: auto;
+  margin: 0 auto;
+}
+
+/*************
+Buttons / Links / inputs
+**************/
+
+.search-input {
+  width: 40vw;
+  max-width: 200px;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 2px;
+  margin-right: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.player1-btn,
+.player2-btn,
+.battle-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2px;
+  background-color: var(--r);
+  color: var(--wht);
+  cursor: pointer;
+  font-weight: 700;
+  margin-bottom: auto;
+}
+
+.battle-btn {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  background-color: var(--b);
+  margin-bottom: 1rem;
+}
+
+/*************
+Typography
+**************/
+
+.welcome-heading {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.player-one-pokemon-name,
+.player-two-pokemon-name {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--b);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/*************
+Layout
+**************/
+
+.battle-arena-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.player-one-container,
+.player-two-container {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+/*************
+Media Queries
+**************/
+
+@media (min-width: 740px) {
+  .pokemon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .player-one-container,
+  .player-two-container {
+    margin-bottom: 1rem;
+    width: 48%;
+    min-height: 400px;
+  }
+
+  .player1-btn,
+  .player2-btn {
+    margin-bottom: 2rem;
+  }
+}

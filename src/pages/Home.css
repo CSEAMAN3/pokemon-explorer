@@ -45,13 +45,12 @@ Buttons / Links / inputs
   border: none;
   border-radius: 2px;
   background-color: var(--r);
-  color: var(--blk1);
+  color: var(--wht);
   cursor: pointer;
   font-weight: 700;
 }
 
 .about-btn {
-  color: var(--wht);
   background-color: var(--b);
 }
 

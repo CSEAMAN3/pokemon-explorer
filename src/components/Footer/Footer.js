@@ -4,7 +4,7 @@ import githubLogo from "../../images/github-icon.svg";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="footer">
       <div className="footer-container">
         <h1 className="footer-heading">&#169; CWS Pokemon Explorer</h1>
         <div className="triangle"></div>

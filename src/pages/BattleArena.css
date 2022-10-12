@@ -48,6 +48,7 @@ Buttons / Links / inputs
   text-transform: capitalize;
   font-size: 1.5rem;
   background-color: var(--b);
+  margin: 0 auto;
   margin-bottom: 1rem;
 }
 
@@ -74,7 +75,7 @@ Typography
 Layout
 **************/
 
-.battle-arena-container {
+.battle-container {
   width: 90%;
   margin: 0 auto;
 }
@@ -82,6 +83,10 @@ Layout
 .player-one-container,
 .player-two-container {
   margin-bottom: 4rem;
+  text-align: center;
+}
+
+.battle-btn-container {
   text-align: center;
 }
 

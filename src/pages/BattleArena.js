@@ -2,9 +2,15 @@ import React from "react";
 import "./BattleArena.css";
 
 export default function BattleArena({ getPlayer1Pokemon, getPlayer2Pokemon, handleChange, playerOne, playerTwo }) {
+  let isAlive = false;
+  let player1Points = 100;
+  let player2Points = 100;
+
+  const damage = [5, 10, 15, 20, 25, 30];
+
   return (
     <div className="battle-arena">
-      <div className="battle-arena-container">
+      <div className="battle-container">
         <h2 className="welcome-heading">Welcome to pokemon Battle Arena. Battle pokemon, see who wins!</h2>
 
         <div className="pokemon-container">
@@ -50,7 +56,9 @@ export default function BattleArena({ getPlayer1Pokemon, getPlayer2Pokemon, hand
             </div>
           </div>
         </div>
-        <button className="battle-btn">battle</button>
+        <div className="battle-btn-container">
+          <button className="battle-btn">battle</button>
+        </div>
       </div>
     </div>
   );
